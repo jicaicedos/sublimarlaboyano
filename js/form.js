@@ -55,13 +55,13 @@ $(function()
         });
         
 
-                    $.ajax({
-                type: "POST",
-                url: 'handler.php',
-                data: $form.serialize(),
-                success: after_form_submitted,
-                dataType: 'json' 
-            });        
+        $.ajax({
+            type: "POST",
+            url: 'handler.php',
+            data: $form.serialize(),
+            success: after_form_submitted,
+            dataType: 'json' 
+        });        
         
       });	
 });
